@@ -1,0 +1,173 @@
+body {
+  overflow-y: scroll;
+  line-height: 1.3em;
+  font-family: arial;
+  font-size: 0.9em;
+  background-color: #d3d3d3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pagingInfo {
+  font-family: arial;
+  float: right;
+}
+
+#title {
+  cursor: pointer;
+}
+#less {
+  width: 15%;
+}
+
+#more {
+  width: 25%;
+}
+
+#title:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#Div2 {
+  display:none;
+}
+.about p {
+  font-family: arial;
+  margin: 0;
+}
+
+.about {
+  position: relative;
+  float: left;
+  left: 15%;
+  min-height: 100%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 30%;
+  -webkit-column-gap: 3em;
+   -moz-column-gap: 3em;
+        column-gap: 4vw;
+
+}
+
+.panel {
+  position: relative;
+  left: 15%;
+  width: 80%;
+}
+
+
+.panel p {
+  font-family: arial;
+  position: relative;
+  float: left;
+  min-height: 100%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 80%;
+  -webkit-column-gap: 3em;
+   -moz-column-gap: 3em;
+        column-gap: 4vw;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+.name .info {
+  font-family: arial;
+  position: absolute;
+}
+
+.archive .info {
+  font-family: arial;
+  position: absolute;
+}
+
+.menu {
+  font-family: arial;
+  margin-bottom: 1px;
+  position: relative;
+  left:15%;
+  width: 85%;
+  float: left;
+}
+
+.menu .info {
+  width: 20%;
+  float: left;
+}
+.accordion .info {
+  cursor: pointer;
+  width: 20%;
+  float: left;
+}
+
+.autoplay {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev {
+  float: left !important;
+  display: block;
+  width: 50% !important;
+  height: 80% !important;
+  background-color: red !important;
+  position: absolute !important;
+  z-index: 1000 !important;
+  opacity: 0 !important;
+}
+
+.slick-next {
+  float: left !important;
+  display: block;
+  width: 50% !important;
+  height: 80% !important;
+  background-color: red !important;
+  position: absolute !important;
+  z-index: 1000 !important;
+  opacity: 0 !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    position: relative;
+    left: 15%;
+    font-family: arial;
+    /*font-size: 0.9em;*/
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    width: 85%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+/*
+.accordion:after {
+    content: '\02795';
+    font-size: 10px;
+    font-weight: 100;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+*/
